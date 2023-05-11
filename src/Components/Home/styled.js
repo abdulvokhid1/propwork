@@ -1,9 +1,8 @@
+/** @format */
 
-import React from "react";
 import styled from "styled-components";
 
-const Wrapper = styled.img`
-display:flex = 
-`
-
-export {Wrapper};
+const Wrapper = styled.div`
+  display: flex;
+`;
+export { Wrapper };

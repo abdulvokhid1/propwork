@@ -1,8 +1,9 @@
-import React from 'react'
+/** @format */
 
- const Home = () => {
-  return (
-    <div className='Container'>Home</div>
-  )
-}
+import React from "react";
+import { Wrapper } from "./styled";
+
+const Home = () => {
+  return <Wrapper>Home</Wrapper>;
+};
 export default Home;
