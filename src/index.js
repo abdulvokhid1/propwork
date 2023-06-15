@@ -4,12 +4,11 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 // import Lessons from "./Lessons";
 import Home from "./Lessons/useState";
-import lesson1 from "./Lessons";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <lesson1 />
+    <Home />
   </React.StrictMode>
 );
 
