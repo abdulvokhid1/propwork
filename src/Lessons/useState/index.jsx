@@ -9,9 +9,13 @@ const Home = () => {
 
   const changeInpuName = (e) => {
     setCount({
+      ...count,
       [e.target.name]: e.target.value,
     });
   };
+  const [getValue, setGetValue] = useState({
+    meaning: "hello",
+  });
   return (
     <div>
       {/* <button

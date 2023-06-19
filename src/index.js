@@ -4,11 +4,12 @@ import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 // import Lessons from "./Lessons";
 import Home from "./Lessons/useState";
+import AppuseEffect from "./Lessons/useEffect";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Home />
+    <AppuseEffect />
   </React.StrictMode>
 );
 
