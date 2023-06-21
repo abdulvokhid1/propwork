@@ -4,17 +4,15 @@ import { useEffect } from "react";
 const AppuseEffect = () => {
   const [response, setResponse] = useState([]);
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos/1")
-      .then((response) => {
-        return response.json();
-      })
-      .then((json) => setResponse(json));
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then((response) => response.json())
+      .then((json) => console.log(json));
   }, []);
   return (
     <div>
       <div>
-        {response.map((value) => {
-          return <div>{value.id}</div>;
+        {response.map((value)=>{
+          return 
         })}
       </div>
     </div>
