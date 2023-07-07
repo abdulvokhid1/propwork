@@ -16,10 +16,19 @@ const App = () => {
   const [state, dispatch] = useReducer(reducer, { count: 0 });
 
   return (
-    <div>
-      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+    <div
+      style={{
+        width: "100%",
+        height: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      <label htmlFor="">type something you wanna do</label> <input />
+      {/* <button onClick={() => dispatch({ type: "increment" })}>+</button>
       {state.count}
-      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>-</button> */}
     </div>
   );
 };
