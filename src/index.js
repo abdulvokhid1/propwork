@@ -3,8 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 // import Lessons from "./Lessons";
-import Home from "./Lessons/useState";
-import AppuseEffect from "./Lessons/useEffect";
 import App from "./Lessons/useRequest";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
