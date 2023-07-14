@@ -13,7 +13,25 @@ const reducer = (state, action) => {
 
 const App = () => {
   // useReducer
-  const [state, dispatch] = useReducer(reducer, { count: 0 });
+  const [state, dispatch] = useReducer(reducer, {
+    data: [
+      {
+        id: 1,
+        toDoName: "watching movie",
+        completed: true,
+      },
+      {
+        id: 2,
+        toDoName: " going out",
+        completed: false,
+      },
+      {
+        id: 3,
+        toDoName: " meeting friends",
+        completed: true,
+      },
+    ],
+  });
 
   return (
     <div
@@ -23,9 +41,27 @@ const App = () => {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        flexDirection: "column",
       }}
     >
-      <label htmlFor="">type something you wanna do</label> <input />
+      <div className="header">
+        <label htmlFor="">type something you wanna do</label> <input />
+        <button>Add</button>
+      </div>
+      <div>
+        {state.data.map((value) => (
+          <div
+            key={value.id}
+            style={{
+              display: "flex",
+              textDecoration: `${value.completed ? "line-through" : "none"}`,
+            }}
+          >
+            <input checked={value.completed} type="checkbox" />
+            <p>{value.toDoName}</p>
+          </div>
+        ))}
+      </div>
       {/* <button onClick={() => dispatch({ type: "increment" })}>+</button>
       {state.count}
       <button onClick={() => dispatch({ type: "decrement" })}>-</button> */}
