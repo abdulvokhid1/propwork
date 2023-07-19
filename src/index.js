@@ -2,9 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-// import Lessons from "./Lessons";
-import Example from "./Lessons/useRequestExample";
-
+import Example from "./Lessons/useReducerExample";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

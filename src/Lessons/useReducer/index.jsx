@@ -1,14 +1,6 @@
 import React, { useReducer, useState } from "react";
 
 const reducer = (state, action) => {
-  // switch (action.type) {
-  //   case "increment":
-  //     return { count: state.count + 1 };
-  //   case "decrement":
-  //     return { count: state.count - 1 };
-  //   default:
-  //     console.error("you sent wrong value");
-  // }
   console.log(action);
 
   switch (action.type) {
@@ -129,9 +121,6 @@ const App = () => {
           )}
         </div>
       </div>
-      {/* <button onClick={() => dispatch({ type: "increment" })}>+</button>
-      {state.count}
-      <button onClick={() => dispatch({ type: "decrement" })}>-</button> */}
     </div>
   );
 };
