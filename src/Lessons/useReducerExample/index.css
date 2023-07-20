@@ -1,0 +1,19 @@
+/* .Container {
+  align-items: center;
+  border: 1px solid red;
+  width: 490px;
+} */
+.wrapper {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  margin: 20px auto;
+}
+.tablerow {
+  border: 1px solid;
+  width: 405px;
+  height: 40px;
+}
