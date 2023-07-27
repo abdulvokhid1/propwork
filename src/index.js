@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Example from "./Lessons/useReducerExample";
-import App from "./Lessons/useContext/index";
+import App from "./App";
+import { CountContext } from "./Lessons/useContext/";
+import CountContextProvider from "./Lessons/useContext/CountContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <CountContextProvider>
     <App />
-  </React.StrictMode>
+  </CountContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function
