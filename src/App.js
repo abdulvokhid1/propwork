@@ -1,7 +1,5 @@
-import React, { useContext } from "react";
-import { CountContext } from "./Lessons/useContext/CountContext";
+import React from "react";
 const App = () => {
-  const value = useContext(CountContext);
   return <div>hello world </div>;
 };
 export default App;
