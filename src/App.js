@@ -1,5 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
+import Navbar from "./components/Navbar";
 const App = () => {
-  return <div>hello world </div>;
+  return (
+    <div>
+      <Navbar />
+    </div>
+  );
 };
 export default App;
