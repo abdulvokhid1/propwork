@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { MovieContext } from "../../context/movieContext";
 
 const Navbar = () => {
-  const [data, setData] = useContext(MovieContext);
+  const [data] = useContext(MovieContext);
   return (
     <div
       style={{
