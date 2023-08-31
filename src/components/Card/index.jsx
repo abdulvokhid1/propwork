@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { MovieContext } from "../../context/movieContext";
 
 const Card = ({ name, published, id, author }) => {
   const [data, setData] = useContext(MovieContext);
+  const [show, setShow] = useState(false);
   return (
     <div
       style={{
@@ -14,10 +15,14 @@ const Card = ({ name, published, id, author }) => {
         textAlign: "center",
         margin: "20px 0",
       }}>
-      <h3>{name}</h3>
+      <h3> {show ? <input /> : name}</h3>
       <p>{published}</p>
       <p>{author}</p>
-      <button>edit</button>
+      {show ? (
+        <button onClick={() => setShow(false)}>save</button>
+      ) : (
+        <button onClick={() => setShow(true)}>edit</button>
+      )}
       <button onClick={() => setData(data.filter((value) => value.id !== id))}>
         delete
       </button>

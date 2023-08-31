@@ -9,7 +9,7 @@ const MovieBody = () => {
       style={{
         display: "flex",
         justifyContent: "center",
-        flexDirection: "column",
+        // flexDirection: "column",
         alignItems: "center",
       }}>
       {data.map((value) => {

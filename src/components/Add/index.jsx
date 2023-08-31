@@ -9,16 +9,21 @@ const Add = () => {
   const [published, setPublished] = useState("");
 
   const onSubmit = () => {
-    console.log(name, author, published);
-    setData([
-      ...data,
-      {
-        id: data.length,
-        name: name,
-        author: author,
-        published: published ? "" : alert("fill all"),
-      },
-    ]);
+    // name
+    // author
+    // published
+    name || author || published === ""
+      ? alert("fill in")
+      : setData([
+          ...data,
+          {
+            id: data.length,
+            name: name,
+            author: author,
+            published: published ? "" : alert("fill all"),
+          },
+        ]);
+    // console.log(name, author, published);
   };
   return (
     <div>
